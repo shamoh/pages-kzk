@@ -1,19 +1,18 @@
-@import '@fontsource-variable/bricolage-grotesque';
-@import '@fontsource/caveat/600.css';
+@import '@fontsource-variable/bodoni-moda/opsz.css';
+@import '@fontsource-variable/bodoni-moda/opsz-italic.css';
+@import '@fontsource-variable/manrope';
 
 :root {
-  --paper: #fff8ef;
-  --ink: #1d1a17;
-  --muted: #6b635a;
-  --line: #ecdfcf;
-  --tomato: #ff5a36;
-  --cobalt: #2f4bff;
-  --pink: #ff8fd1;
-  --sun: #ffd23f;
-  --mint: #19c37d;
-  --sans: 'Bricolage Grotesque Variable', system-ui, sans-serif;
-  --hand: 'Caveat', cursive;
-  --page: 76rem;
+  --paper: #f6f1ea;
+  --paper-2: #efe7dd;
+  --ink: #241f1c;
+  --muted: #7a6f67;
+  --line: #e0d5c8;
+  --rose: #b4766b;
+  --blush: #ead6cf;
+  --serif: 'Bodoni Moda Variable', 'Didot', Georgia, serif;
+  --sans: 'Manrope Variable', system-ui, sans-serif;
+  --page: 74rem;
   color-scheme: light;
 }
 
@@ -43,27 +42,34 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font: 400 1.0625rem/1.6 var(--sans);
+  font: 400 1rem/1.7 var(--sans);
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
 }
 
 a {
   color: inherit;
+  text-decoration-color: var(--line);
+  text-underline-offset: 0.3em;
+  transition: color 200ms, text-decoration-color 200ms;
+}
+
+a:hover {
+  color: var(--rose);
+  text-decoration-color: currentColor;
 }
 
 :focus-visible {
-  outline: 3px solid var(--cobalt);
-  outline-offset: 3px;
-  border-radius: 6px;
+  outline: 1px solid var(--rose);
+  outline-offset: 4px;
 }
 
 h1,
 h2,
 h3 {
   margin: 0;
-  line-height: 0.95;
-  letter-spacing: -0.035em;
+  font-family: var(--serif);
+  font-weight: 400;
+  line-height: 1;
 }
 
 p {
@@ -81,7 +87,9 @@ img {
   margin-inline: auto;
 }
 
-.hand {
-  font-family: var(--hand);
-  font-weight: 600;
+.label {
+  font: 600 0.72rem/1.4 var(--sans);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
 }
