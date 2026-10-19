@@ -1,6 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="18" fill="#ffd23f"/>
-  <circle cx="24" cy="26" r="13" fill="#ff5a36"/>
-  <rect x="30" y="30" width="22" height="22" rx="4" fill="#2f4bff" transform="rotate(12 41 41)"/>
-  <circle cx="44" cy="18" r="6" fill="#ff8fd1"/>
+  <rect width="64" height="64" rx="32" fill="#241f1c"/>
+  <text x="32" y="44" text-anchor="middle" font-family="Didot, 'Bodoni 72', Georgia, serif" font-style="italic" font-size="38" fill="#ead6cf">R</text>
 </svg>

@@ -15,12 +15,14 @@ změně ve větvi `main`. Nemusíš nic instalovat: všechno jde upravit přímo
 
 `obor` (kresba, grafika, ilustrace, foto…) si vymýšlíš sama: z oborů se na webu samy udělají tlačítka filtru.
 
+Nejnovější práce (podle `rok`) se ukáže i velká na úvodní stránce.
+
 Ukázkové práce (`ukazka-*.md` a `ukazka-*.jpg`, na webu mají štítek „ukázka“) smaž, až budeš mít první vlastní:
 otevři soubor, vpravo nahoře **⋯ → Delete file**.
 
 ## Změnit texty
 
-Jméno, úvodní text, nálepky kolem jména, slova v běžícím pásu, text „O mně“ s koníčky a odkazy (Instagram, Behance…)
+Jméno, řádek nad jménem, úvodní text, text „O mně“ s koníčky a odkazy (Instagram, Behance…)
 jsou v [`src/site.ts`](src/site.ts). Odkaz se na webu ukáže, jakmile u něj vyplníš `url`.
 
 ## Když se něco pokazí
