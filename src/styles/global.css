@@ -1,0 +1,87 @@
+@import '@fontsource-variable/bricolage-grotesque';
+@import '@fontsource/caveat/600.css';
+
+:root {
+  --paper: #fff8ef;
+  --ink: #1d1a17;
+  --muted: #6b635a;
+  --line: #ecdfcf;
+  --tomato: #ff5a36;
+  --cobalt: #2f4bff;
+  --pink: #ff8fd1;
+  --sun: #ffd23f;
+  --mint: #19c37d;
+  --sans: 'Bricolage Grotesque Variable', system-ui, sans-serif;
+  --hand: 'Caveat', cursive;
+  --page: 76rem;
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 1.0625rem/1.6 var(--sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--cobalt);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.page {
+  width: min(100% - 2.5rem, var(--page));
+  margin-inline: auto;
+}
+
+.hand {
+  font-family: var(--hand);
+  font-weight: 600;
+}
