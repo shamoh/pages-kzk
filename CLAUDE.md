@@ -11,5 +11,6 @@ a ukázkovými pracemi: žádné skutečné jméno ani osobní údaje (věk,
   ve schématu `src/content.config.ts`); soubory s `_` na začátku jsou vzory. Filtr se tvoří z hodnot `obor`.
   Přidávání musí jít jen přes web GitHubu (README): nové pole vždy nepovinné, `_vzor.md` s komentáři držet aktuální.
 - Texty, koníčky („Co mě baví“ v „O mně“) a odkazy v `src/site.ts`. Prohlížeč obrázků `Lightbox.astro` (`<dialog>`, přeskakuje práce skryté filtrem).
+- Google Analytics 4: `site.analytics` (ID měření), tag v `Base.astro` jen v produkčním buildu.
 - Node.js ≥ 24 (`engines`), ve workflow `node-version: 24`.
 - Deploy: GitHub Actions → GitHub Pages z `main` (`.github/workflows/deploy.yml`), doména v `public/CNAME`.
