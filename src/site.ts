@@ -4,6 +4,8 @@ export const site = {
   title: 'Rachel · kresba & grafika',
   description: 'Portfolio: kresba, ilustrace a grafika.',
   url: 'https://kacka.kramolis.cz',
+  /** Google Analytics 4 measurement ID; empty = no analytics */
+  analytics: 'G-BD46R7YRSN',
   /** the small line above the name on the home page */
   label: 'Kresba · Ilustrace · Grafika',
   intro: 'Kreslím, navrhuju a hraju si s barvou, písmem a obrazem. Tady je výběr z toho, co vzniklo.',
